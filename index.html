@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chaitanya Shah</title>
+
+	<link rel="icon" type="image/icon" href="images/Chaitanya-Shah-Circle-transparent.png">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+	<button onclick="topFunction()" id="BackToTop" title="Go to top"><i class="fa-solid fa-caret-up"></i></button>
+
+	<nav>
+		<div id="header">
+			<div class="header-logo">
+				<h2><img src="images/Chaitanya-Shah-horizontal-transparent.png" height="50px"><!-- Chaitanya Shah --></h2>
+			</div>
+			<ul>
+				<li class="hideOnMobile"><a href="index.html" style="text-shadow: 0px 0px 10px white; font-weight: bold;">Home</a></li>
+				<li class="hideOnMobile"><a href="skills.html">Skills</a></li>
+				<li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+				<li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+				<li class="hideOnMobile" onclick="resumeOpen()"><button class="resume-button">Resume</button></li>
+				
+			</ul>
+			<li class="menu-button" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></li>
+		</div>
+		<ul class="sidebar">
+			<li class="close-sidebar" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+			<li><a href="index.html" style="text-shadow: 0px 0px 20px white; font-weight: bold;">Home</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><button class="resume-button" onclick="resumeOpen()">Resume</button></li>
+			<li><img src="images/Chaitanya-Shah-Circle-transparent.png" width="100px"></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div id="hero">
+			<div class="section">
+				<h1>Hi, I am <br>Chaitanya Shah.</h1>
+				<p>A Second Year Engineering student at SVKM’s Dwarkadas J. Sanghvi College of Engineering and a Team Leader at Viral Fission.</p>
+				<div class="buttons">
+					<button id="contact-button-section" onclick="navtoContact()">Contact Me</button> 
+					<div class="logo-icon">
+						<a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://github.com/ChaitanyaShah26" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="image-holder">
+				<div id="myPic">
+					<img src="images/chaitanya-shah.png" alt="My Image">
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="about-me">
+			<h1>About Me</h1>
+			<p>I am a Second Year Engineering student at SVKM’s Dwarkadas J. Sanghvi College of Engineering pursuing my degree in Artificial Intelligence (AI) and Data Science. I am also a Team Lead at Viral Fission.</p>
+		</div>
+
+		<div id="education">
+			<h1>Education</h1>
+			<div class="education-content">
+				<div class="left-box">
+					<div class="education-box">
+						<h4>2023-2027</h4>
+						<h3>SVKM’s Dwarkadas J. Sanghvi College of Engineering</h3>
+						<p>B.Tech. Artificial Intelligence (AI) & Data Science</p>
+					</div>
+					<div class="education-box">
+						<h4>&nbsp;</h4>
+						<h3>&nbsp;</h3>
+						<p>&nbsp;</p>
+					</div>
+					<div class="education-box">
+						<h4>2009-2021</h4>
+						<h3>Swami Vivekanad International School & Jr. College</h3>
+						<p>Secondary School Certificate (SSC)</p>
+					</div>
+				</div>
+				<div class="timeline">
+					<img src="images/djsce-logo.png" width="25px" height="25px">
+					<img src="images/svis-logo.png" width="25px" height="25px">
+					<img src="images/svis-logo.png" width="25px" height="25px">
+				</div>
+				<div class="right-box">
+					<div class="education-box">
+						<h4>&nbsp;</h4>
+						<h3>&nbsp;</h3>
+						<p>&nbsp;</p>
+					</div>
+					<div class="education-box">
+						<h4>2021-2023</h4>
+						<h3>Swami Vivekanad International School & Jr. College</h3>
+						<p>Higher Secondary Certificate (HSC)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="education-mobile">
+			<h1>Education</h1>
+			<div class="education-mobile-content">
+				<div class="education-box-mobile">
+					<img src="images/djsce-logo.png" width="20px" height="20px">
+					<div>
+						<h4>2023-2027</h4>
+						<h3>SVKM’s Dwarkadas J. Sanghvi College of Engineering</h3>
+						<p>B.Tech. Artificial Intelligence (AI) & Data Science</p>
+					</div>
+				</div>
+				<div class="education-box-mobile">
+					<img src="images/svis-logo.png" width="20px" height="20px">
+					<div>
+						<h4>2021-2023</h4>
+						<h3>Swami Vivekanad International School & Jr. College</h3>
+						<p>Higher Secondary Certificate (HSC)</p>
+					</div>
+				</div>
+				<div class="education-box-mobile">
+					<img src="images/svis-logo.png" width="20px" height="20px">
+					<div>
+						<h4>2009-2021</h4>
+						<h3>Swami Vivekanad International School & Jr. College</h3>
+						<p>Secondary School Certificate (SSC)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="">
+			<h1></h1>
+		</div>
+	</main>
+
+	<footer>
+		<div id="footer">
+			<div class="footer-icons">
+				<h2>Chaitanya Shah</h2>
+				<div class="social-icons">
+					<div class="logo-icon">
+						<a href="mailto:sendittochaitanya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://wa.me/+918356881366" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://github.com/ChaitanyaShah26" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://instagram.com/chaitanyashah_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://www.facebook.com/profile.php?id=100073859078767" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://x.com/Chaitanyashah26" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+					</div>
+				</div>
+				<button class="resume-button" onclick="resumeOpen()">Resume</button>
+			</div>
+
+			<div class="footer-links">
+				<div class="nav-links">
+					<h4></h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about-me">About Me</a></li>
+						<li><a href="index.html#education">Education</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="skills.html#certificates">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="social-links">
+					<h4>Socials</h4>
+					<ul>
+						<li><a href="https://instagram.com/chaitanyashah_" target="_blank">Instagram</a></li>
+						<li><a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank">LinkedIn</a></li>
+						<li><a href="https://github.com/ChaitanyaShah26" target="_blank">GitHub</a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100073859078767" target="_blank">Facebook</a></li>
+						<li><a href="https://x.com/Chaitanyashah26" target="_blank">X (Twitter)</a></li>
+						<li><a href="https://linktr.ee/chaitanyashah" target="_blank">Linktree</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-logo">
+				<img src="images/Chaitanya-Shah-horizontal-transparent.png" height="80px">
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
