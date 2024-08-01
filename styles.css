@@ -487,9 +487,12 @@ main {
 }
 
 
+
+
+
 /* ---- Main div styling ---- */
 
-#skills {
+#skills, #certificates, #projects {
 	width: 1240px;
 	margin: 0px auto;
 	height: fit-content;
@@ -499,7 +502,7 @@ main {
 	padding: 40px;
 }
 
-#skills h1 {
+#skills h1, #certificates h1, #projects h1 {
 	width: 50%;
 	font-family: "Bebas Neue";
 	padding: 8px 20px;
@@ -507,6 +510,16 @@ main {
 	font-size: 280%;
 	color: var(--White);
 }
+
+#projects p {
+	width: 50%;
+	font-family: "Manrope";
+	padding: 0px 20px;
+	padding-bottom: 40px;
+	color: var(--Blue-White);
+}
+
+
 
 
 
@@ -626,6 +639,168 @@ main {
 	transform: translateY(0);
 	border-radius: 0px 0px 16px 16px;
 }
+
+
+
+
+
+
+
+
+/* ---- Projects ---- */
+
+.projects-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	margin-bottom: 32px;
+}
+
+.project-card {
+	display: inline-block;
+	width: 400px;
+	height: 320px;
+	perspective: 1000px;
+	/*background-color: rgba(30, 38, 50, 0.6);*/
+	border-radius: 32px;
+}
+
+.project-card-front, .project-card-back {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: transform 0.8s ease-in-out;
+	transform-style: preserve-3d;
+	background-color: var(--Dark-Grey);/*rgba(30, 38, 50, 0.6)*/;
+	border-radius: 32px;
+	border: 2px solid var(--Off-White);
+}
+
+.project-card-front {
+	transform: rotateY(0deg);
+	z-index: 2;
+}
+
+.project-card-back {
+	transform: rotateY(180deg);
+	z-index: 1;
+}
+
+.project-card-front {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.project-card-front img {
+	width: 360px;
+	height: auto;
+	background-color: var(--Light-Grey);
+	border-radius: 16px;
+	padding: 8px;
+}
+
+.project-card-front h2 {
+	font-family: "Manrope";
+	color: var(--Sky-Blue);
+}
+
+.project-card-back {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: flex-start;
+}
+
+.project-card-back h2 {
+	padding: 4px 20px;
+	padding-top: 16px;
+	width: fit-content;
+	font-family: "Manrope";
+	color: var(--White);
+}
+
+.project-details {
+	padding: 4px 20px;
+	width: fit-content;
+	font-family: "Manrope";
+	color: var(--Blue-White);
+}
+
+.project-year, .project-skills {
+	margin: 0px 20px;
+	padding-top: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-self: stretch;
+	height: fit-content;
+	border-bottom: 1px dotted var(--Off-White);
+}
+
+.project-year h4, .project-skills h4 {
+	width: fit-content;
+	text-align: left;
+	color: var(--White);
+}
+
+.project-year h5, .project-skills h5 {
+	font-weight: normal;
+	width: fit-content;
+	text-align: right;
+	color: var(--Off-White);
+	max-width: 40%;
+}
+
+.project-link-github {
+	padding: 16px 20px;
+	padding-bottom: 4px;
+	align-self: stretch;
+}
+
+.project-link-github a {
+	width: fit-content;
+	text-decoration: none;
+	font-family: "Manrope";
+	font-weight: bold;
+	color: var(--Sky-Blue);
+	border-bottom: 1.6px solid var(--Sky-Blue);
+}
+
+.project-link {
+	padding: 8px 20px;
+	align-self: stretch;
+	text-align: right;
+}
+
+.project-link a {
+	width: fit-content;
+	text-decoration: none;
+	font-family: "Manrope";
+	font-weight: bold;
+	color: var(--Sky-Blue);
+}
+
+.project-card:hover .project-card-front, .project-card:active .project-card-front {
+	transform: rotateY(-180deg);
+}
+
+.project-card:hover .project-card-back, .project-card:active .project-card-back {
+	transform: rotateY(0deg);
+}
+
+
+
 
 
 
@@ -831,7 +1006,7 @@ footer {
 		display: flex;
 	}
 
-	#skills {
+	#skills, #certificates, #projects {
 		width: 80%;
 		height: fit-content;
 		padding: 20px;
@@ -839,7 +1014,7 @@ footer {
 		align-items: center;
 	}
 
-	#skills h1 {
+	#skills h1, #certificates h1, #projects h1 {
 		width: 100%;
 		text-align: left;
 	}
@@ -855,6 +1030,35 @@ footer {
 
 	.certificates-content {
 		row-gap: 20px;
+	}
+
+	.card-cover img {
+		width: 240px;
+	}
+
+	#projects p {
+		width: 100%;
+	}
+
+	.projects-content {
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		row-gap: 24px;
+	}
+
+	.project-card {
+		width: 80vw;
+		height: 56vh;
+		padding: 8px;
+	}
+
+	.project-card-front h2 {
+		padding: 0px 16px;
+	}
+
+	.project-card-front img {
+		width: 280px;
 	}
 
 
