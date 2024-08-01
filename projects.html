@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects-Chaitanya Shah</title>
+
+	<link rel="icon" type="image/icon" href="images/Chaitanya-Shah-Circle-transparent.png">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+	<button onclick="topFunction()" id="BackToTop" title="Go to top"><i class="fa-solid fa-caret-up"></i></button>
+
+	<nav>
+		<div id="header">
+			<div class="header-logo">
+				<h2><img src="images/Chaitanya-Shah-horizontal-transparent.png" height="50px"><!-- Chaitanya Shah --></h2>
+			</div>
+			<ul>
+				<li class="hideOnMobile"><a href="index.html">Home</a></li>
+				<li class="hideOnMobile"><a href="skills.html">Skills</a></li>
+				<li class="hideOnMobile"><a href="projects.html" style="text-shadow: 0px 0px 10px white; font-weight: bold;">Projects</a></li>
+				<li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+				<li class="hideOnMobile" onclick="resumeOpen()"><button class="resume-button">Resume</button></li>
+				
+			</ul>
+			<li class="menu-button" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></li>
+		</div>
+		<ul class="sidebar">
+			<li class="close-sidebar" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li><a href="projects.html" style="text-shadow: 0px 0px 20px white; font-weight: bold;">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><button class="resume-button" onclick="resumeOpen()">Resume</button></li>
+			<li><img src="images/Chaitanya-Shah-Circle-transparent.png" width="100px"></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div id="projects">
+			<h1>Projects</h1>
+			<p>Here are some of my projects and other works that showcase my skills & interest.</p>
+			<div class="projects-content">
+				<!-- TicTacToe Game -->
+				<div class="project-card">
+					<div class="project-card-front">
+						<h2>Tic-Tac-Toe PvP Game</h2>
+						<img src="images/project-images/TicTacToe-Preview.png">
+					</div>
+					<div class="project-card-back">
+						<h2>Tic-Tac-Toe PvP Game</h2>
+						<div class="project-details">
+							Created a GUI Program for PvP TicTacToe Game using Java Swing package. <br>
+							The game can be played with another player and results in a win or draw state according to standard TicTacToe rules.
+						</div>
+						<div class="project-year">
+							<h4>Year</h4>
+							<h5>2024</h5>
+						</div>
+						<div class="project-skills">
+							<h4>Skills</h4>
+							<h5>Java, Java Swing</h5>
+						</div>
+						<div class="project-link-github">
+							<a href="https://github.com/ChaitanyaShah26/TicTacToe-PvP-Game.git" target="_blank">
+								See on GitHub <i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Simple Banking Portal -->
+				<div class="project-card">
+					<div class="project-card-front">
+						<h2>Simple Banking Portal</h2>
+						<img src="images/project-images/BankingSystem-Preview.png">
+					</div>
+					<div class="project-card-back">
+						<h2>Simple Banking Portal</h2>
+						<div class="project-details">
+							Built a GUI Application of a Simple Banking Portal. The user can deposit & withdraw amount and view account summary. They can also add their new account details.<br>
+							The data is stored in an external text file.
+						</div>
+						<div class="project-year">
+							<h4>Year</h4>
+							<h5>2024</h5>
+						</div>
+						<div class="project-skills">
+							<h4>Skills</h4>
+							<h5>Java, Java Swing</h5>
+						</div>
+						<div class="project-link-github">
+							<a href="https://github.com/ChaitanyaShah26/Simple-Banking-Portal.git" target="_blank">
+								See on GitHub <i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Restaurant Website -->
+				<div class="project-card">
+					<div class="project-card-front">
+						<h2>Static Restaurant Website</h2>
+						<img src="images/project-images/CafeBistro_RestaurantWebsite-Preview.png">
+					</div>
+					<div class="project-card-back">
+						<h2>Static Restaurant Website</h2>
+						<div class="project-details">
+							Created a static website for a Restaurant. Used html5 for structuring the content of the site while css3 was used for styling, layouting and creative representation of the site.
+						</div>
+						<div class="project-year">
+							<h4>Year</h4>
+							<h5>2024</h5>
+						</div>
+						<div class="project-skills">
+							<h4>Skills</h4>
+							<h5>HTML, CSS</h5>
+						</div>
+						<div class="project-link-github">
+							<a href="https://github.com/ChaitanyaShah26/Restaurant-Website.git" target="_blank">
+								See on GitHub <i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+						<div class="project-link">
+							<a href="https://chaitanyashah26.github.io/Restaurant-Website/" target="_blank">
+								View <i class="fa-solid fa-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Charity Website -->
+				<div class="project-card">
+					<div class="project-card-front">
+						<h2>Responsive Charity Website</h2>
+						<img src="images/project-images/SmileMakers_CharityWebsite-Preview.png">
+					</div>
+					<div class="project-card-back">
+						<h2>Responsive Charity Website</h2>
+						<div class="project-details">
+							Built a responsive website for a Charity Organisation. Html is used for the content of the pages and Css is used for styling and layouting.
+							The site has different pages accessible through navbar.
+						</div>
+						<div class="project-year">
+							<h4>Year</h4>
+							<h5>2024</h5>
+						</div>
+						<div class="project-skills">
+							<h4>Skills</h4>
+							<h5>HTML, CSS</h5>
+						</div>
+						<div class="project-link-github">
+							<a href="https://github.com/ChaitanyaShah26/Charity-Website.git" target="_blank">
+								See on GitHub <i class="fa-brands fa-github"></i>
+							</a>
+						</div>
+						<div class="project-link">
+							<a href="https://chaitanyashah26.github.io/Charity-Website/" target="_blank">
+								View <i class="fa-solid fa-link"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+
+			<h1>Design Work</h1>
+			<div id="design-work">
+				<div class="design-work-contents">
+					<img src="images/design-work-images/Ganesh Chaturthi.jpg">
+					<img src="images/design-work-images/Ganesh Chaturthi.jpg">
+					<img src="images/design-work-images/Ganesh Chaturthi.jpg">
+					<img src="images/design-work-images/Ganesh Chaturthi.jpg">
+					<img src="images/design-work-images/Ganesh Chaturthi.jpg">
+				</div>
+			</div>
+
+			<!-- 
+				<i class="fa-solid fa-chevron-left"></i>
+				<i class="fa-solid fa-chevron-right"></i>
+
+			 -->
+
+		</div>
+
+		<hr>
+	</main>
+
+	<footer>
+		<div id="footer">
+			<div class="footer-icons">
+				<h2>Chaitanya Shah</h2>
+				<div class="social-icons">
+					<div class="logo-icon">
+						<a href="mailto:sendittochaitanya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://wa.me/+918356881366" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://github.com/ChaitanyaShah26" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://instagram.com/chaitanyashah_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://www.facebook.com/profile.php?id=100073859078767" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					</div>
+					<div class="logo-icon">
+						<a href="https://x.com/Chaitanyashah26" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+					</div>
+				</div>
+				<button class="resume-button" onclick="resumeOpen()">Resume</button>
+			</div>
+
+			<div class="footer-links">
+				<div class="nav-links">
+					<h4></h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about-me">About Me</a></li>
+						<li><a href="index.html#education">Education</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="skills.html#certificates">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="social-links">
+					<h4>Socials</h4>
+					<ul>
+						<li><a href="https://instagram.com/chaitanyashah_" target="_blank">Instagram</a></li>
+						<li><a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank">LinkedIn</a></li>
+						<li><a href="https://github.com/ChaitanyaShah26" target="_blank">GitHub</a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100073859078767" target="_blank">Facebook</a></li>
+						<li><a href="https://x.com/Chaitanyashah26" target="_blank">X (Twitter)</a></li>
+						<li><a href="https://linktr.ee/chaitanyashah" target="_blank">Linktree</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-logo">
+				<img src="images/Chaitanya-Shah-horizontal-transparent.png" height="80px">
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
