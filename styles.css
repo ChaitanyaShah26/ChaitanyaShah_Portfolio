@@ -87,7 +87,7 @@ nav {
 	position: fixed;
 	top: 0px;
 	background: rgba(4, 12, 24, 0.6);
-	backdrop-filter: blur(80px);
+	backdrop-filter: blur(60px);
 	height: fit-content;
 	/*box-shadow: 0px 0px 2px var(--Light-Grey);*/
 }
@@ -403,6 +403,7 @@ main {
 }
 
 .education-content {
+	font-family: "Manrope";
 	padding: 12px;
 	display: flex;
 	flex-direction: row;
@@ -413,6 +414,7 @@ main {
 }
 
 .education-mobile-content {
+	font-family: "Manrope";
 	width: 100%;
 	padding: 12px;
 	display: flex;
@@ -492,7 +494,7 @@ main {
 
 /* ---- Main div styling ---- */
 
-#skills, #certificates, #projects {
+#skills, #certificates, #projects, #contact {
 	width: 1240px;
 	margin: 0px auto;
 	height: fit-content;
@@ -502,7 +504,7 @@ main {
 	padding: 40px;
 }
 
-#skills h1, #certificates h1, #projects h1 {
+#skills h1, #certificates h1, #projects h1, #contact h1 {
 	width: 50%;
 	font-family: "Bebas Neue";
 	padding: 8px 20px;
@@ -800,6 +802,182 @@ main {
 }
 
 
+/* ---- Design Work ---- */
+
+#design-work {
+	width: 96%;
+	margin: 20px auto;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 12px;
+	background-color: rgba(30, 32, 39, 0.4);
+	border-radius: 40px;
+}
+
+#design-work h1 {
+	width: 50%;
+	font-family: "Bebas Neue";
+	padding: 8px 20px;
+	font-weight: normal;
+	font-size: 280%;
+	color: var(--White);
+	margin-bottom: 16px;
+}
+
+.design-work-contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	padding: 20px;
+	align-content: center;
+	align-items: center;
+}
+
+.design-work-contents figure {
+	width: 20%;
+	height: fit-content;
+	padding: 4px;
+	border-radius: 20px;
+	border: 2px solid var(--Sky-Blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: var(--Background);
+	pointer-events: none;
+}
+.design-work-contents figure img {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.design-work-quotes {
+	width: 25%;
+	height: fit-content;
+	padding: 4px;
+	border-radius: 20px;
+	border: 2px solid var(--Sky-Blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: var(--Background);
+	pointer-events: none;
+}
+.design-work-quotes img {
+	width: 100%;
+	border-radius: 16px;
+}
+
+
+
+
+
+
+
+/* ---- Contact ---- */
+
+.contact-details {
+	width: 100%;
+	padding: 20px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.contact-details h3 {
+	font-family: "Manrope";
+	font-weight: normal;
+	line-height: 120%;
+	color: var(--Off-White);
+}
+
+.contact-details h3 a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: var(--Blue-White);
+}
+
+.contact-details h2 {
+	font-size: 160%;
+	margin: 24px 0px;
+	font-weight: normal;
+	color: var(--Off-White);
+}
+
+.contact-details h2 .resume-button {
+	font-size: 75%;
+}
+.contact-details h2 .resume-button:hover {
+	box-shadow: inset 0 0 0 24px var(--Light-Grey);
+}
+
+.contact-tiles {
+	font-family: "Manrope";
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.contact-tiles a {
+	text-decoration: none;
+	font-size: 120%;
+	font-weight: bold;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 12px;
+	padding: 12px;
+	color: var(--Sky-Blue);
+	background-color: var(--Dark-Grey);
+	border: 2px solid var(--Dark-Grey);
+	border-radius: 40px;
+	transition: transform 0.4s, border 0.4s, box-shadow 0.4s;
+}
+
+.contact-tiles a span {
+	box-shadow: inset 0 0 0 var(--Blue-White);
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 12px;
+	background-color: var(--Background);
+	border-radius: 40px;
+	font-size: 124%;
+	transition: color 0.4s, box-shadow 0.4s;
+}
+
+.contact-tiles a p {
+	text-align: left;
+	padding-right: 16px;
+}
+
+.contact-tiles a:hover, .contact-tiles a:focus {
+	transform: translateY(-16px);
+	border: 2px solid var(--Blue-White);
+	box-shadow: 0px 12px 12px -8px var(--Blue-White);
+}
+
+.contact-tiles a:hover>span, .contact-tiles a:focus>span {
+	box-shadow: inset 0 0 80px var(--Sky-Blue);
+	color: var(--Background);
+}
 
 
 
@@ -1006,7 +1184,7 @@ footer {
 		display: flex;
 	}
 
-	#skills, #certificates, #projects {
+	#skills, #certificates, #projects, #design-work, #contact {
 		width: 80%;
 		height: fit-content;
 		padding: 20px;
@@ -1014,7 +1192,7 @@ footer {
 		align-items: center;
 	}
 
-	#skills h1, #certificates h1, #projects h1 {
+	#skills h1, #certificates h1, #projects h1, #design-work h1, #contact h1 {
 		width: 100%;
 		text-align: left;
 	}
@@ -1059,6 +1237,48 @@ footer {
 
 	.project-card-front img {
 		width: 280px;
+	}
+
+	.design-work-contents {
+		padding: 12px;
+		gap: 12px;
+	}
+
+	.design-work-contents figure {
+		width: 40%;
+	}
+
+	.design-work-quotes {
+		width: 40%;
+	}
+
+	.contact-details {
+		padding: 10px;
+	}
+
+	.contact-details h2 {
+		font-size: 140%;
+	}
+
+	.contact-tiles {
+		margin: 0px;
+		gap: 0px;
+		row-gap: 20px;
+		width: 100%;
+		padding: 0px;
+	}
+
+	.contact-tiles a {
+		gap: 8px;
+		padding: 8px;
+		font-size: 90%;
+	}
+	.contact-tiles a span {
+		padding: 8px;
+		font-size: 90%;
+	}
+	.contact-tiles a p {
+		padding-right: 8px;
 	}
 
 
