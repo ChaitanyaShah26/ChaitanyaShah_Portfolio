@@ -51,6 +51,10 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 40px;
 }
 
+img[alt] {
+	color: grey;
+}
+
 body {
 	background: var(--Background);
 	height: 100vh;
