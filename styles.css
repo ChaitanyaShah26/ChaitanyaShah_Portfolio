@@ -1248,12 +1248,8 @@ footer {
 		gap: 12px;
 	}
 
-	.design-work-contents figure {
-		width: 40%;
-	}
-
-	.design-work-quotes {
-		width: 40%;
+	.design-work-contents figure, .design-work-quotes {
+		width: 80%;
 	}
 
 	.contact-details {
