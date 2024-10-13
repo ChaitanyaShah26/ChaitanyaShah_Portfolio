@@ -29,7 +29,7 @@ function hideSidebar()
 
 function resumeOpen()
 {
-	window.open('resume/Chaitanya Shah-Resume.pdf','_blank');
+	window.open('https://chaitanyashah26.github.io/ChaitanyaShah_Portfolio/resume/Chaitanya Shah-Resume.pdf','_blank');
 }
 
 function navtoContact() 
