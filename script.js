@@ -29,7 +29,7 @@ function hideSidebar()
 
 function resumeOpen()
 {
-	window.open('https://drive.google.com/file/d/1CryuaOKrQS4uiB6Dao05-RIw9FLgJgXU/view?usp=sharing','_blank');
+	window.open('resume/Chaitanya Shah-Resume.pdf','_blank');
 }
 
 function navtoContact() 
