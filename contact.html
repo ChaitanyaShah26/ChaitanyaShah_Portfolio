@@ -12,6 +12,10 @@
 	<!-- Font Awesome Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<script type="text/javascript" src="script.js"></script>
@@ -49,39 +53,39 @@
 
 	<main>
 		<div id="contact">
-			<h1>Let's Connect</h1>
+			<h1 data-aos="fade-down" data-aos-duration="500">Let's Connect</h1>
 
 			<div class="contact-details">
-				<h3>
+				<h3 data-aos="fade-down" data-aos-duration="1000">
 					Say hello at <a href="mailto:sendittochaitanya@gmail.com" target="_blank">sendittochaitanya@gmail.com</a>
 				</h3>
 
-				<h2>
+				<h2 data-aos="fade-down" data-aos-duration="1000">
 					For more info :&nbsp;&nbsp;<button class="resume-button" onclick="resumeOpen()">Resume</button>
 				</h2>
 
 				<div class="contact-tiles">
-					<a href="mailto:sendittochaitanya@gmail.com" target="_blank">
+					<a href="mailto:sendittochaitanya@gmail.com" target="_blank" data-aos="flip-up" data-aos-duration="1500">
 						<span><i class="fa-solid fa-envelope"></i></span>
 						<p>sendittochaitanya@gmail.com</p>
 					</a>
 
-					<a href="https://wa.me/+918356881366" target="_blank">
+					<a href="https://wa.me/+918356881366" target="_blank" data-aos="flip-up" data-aos-duration="1500">
 						<span><i class="fa-brands fa-whatsapp"></i></span>
 						<p>+91 8356881366</p>
 					</a>
 
-					<a href="https://instagram.com/chaitanyashah_" target="_blank">
+					<a href="https://instagram.com/chaitanyashah_" target="_blank" data-aos="flip-up" data-aos-duration="1500">
 						<span><i class="fa-brands fa-instagram"></i></span>
 						<p>@chaitanyashah_</p>
 					</a>
 
-					<a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank">
+					<a href="https://www.linkedin.com/in/chaitanyav-shah" target="_blank" data-aos="flip-up" data-aos-duration="1500">
 						<span><i class="fa-brands fa-linkedin"></i></span>
 						<p>in/chaitanyav-shah</p>
 					</a>
 
-					<a href="https://github.com/ChaitanyaShah26" target="_blank">
+					<a href="https://github.com/ChaitanyaShah26" target="_blank" data-aos="flip-up" data-aos-duration="1500">
 						<span><i class="fa-brands fa-github"></i></span>
 						<p>/ChaitanyaShah26</p>
 					</a>
@@ -95,7 +99,7 @@
 	</main>
 
 	<footer>
-		<div id="footer">
+		<div id="footer" data-aos="fade-up">
 			<div class="footer-icons">
 				<h2>Chaitanya Shah</h2>
 				<div class="social-icons">
@@ -155,6 +159,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		AOS.init();
+	</script>
 </body>
 
 </html>
